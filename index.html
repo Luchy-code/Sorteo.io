@@ -444,11 +444,9 @@
 
     function updateBoardMeta() {
       const total = getTotalNumberCount();
-      const boardLabel = document.getElementById('boardTotalLabel');
       const boardText = document.getElementById('boardRangeText');
       const footer = document.getElementById('boardFooterCount');
 
-      boardLabel.textContent = `${total} numeros`;
       boardText.textContent = `Números auditados del 01 al ${total} listos para el sorteo`;
       footer.textContent = `Seed: 0x98A...4F10 • ${total} Casillas Activas`;
     }
